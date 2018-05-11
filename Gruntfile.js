@@ -19,7 +19,7 @@ module.exports = function (grunt) {
 
 
 	grunt.registerTask('generatePageOne', function() {
-		console.log(config.appName);
+		console.log(config.pageOneName);
 		grunt.file.copy('page1.html', config.buildFolder + '/page1.html', {
 			process: function(files){
 				return grunt.template.process(files, {
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 	});
 
 	grunt.registerTask('generatePageTwo', function() {
-		console.log(config.appName);
+		console.log(config.pageTwoName);
 		grunt.file.copy('page2.html', config.buildFolder + '/page2.html', {
 			process: function(files){
 				return grunt.template.process(files, {
