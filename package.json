@@ -15,8 +15,9 @@
     "url": "https://github.com/NicoAleC/SecondExam/issues"
   },
   "homepage": "https://github.com/NicoAleC/SecondExam#readme",
-  "description": "",
   "dependencies": {
     "grunt": "^1.0.2"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

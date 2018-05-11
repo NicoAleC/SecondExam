@@ -1,10 +1,8 @@
 module.exports = function (grunt) {
 
-	var archivo = {
-		nArchivo: grunt.option('nArchivo');
-	}
+	var archivo =  grunt.option('nArchivo');
 
-	var config = grunt.file.readJSON(archivo.nArchivo);
+	var config = grunt.file.readJSON(archivo);
 
 	grunt.registerTask('generateIndex', function() {
 		console.log(config.appName);
@@ -19,18 +17,6 @@ module.exports = function (grunt) {
 		});
 	});
 
-	grunt.registerTask('generateIndex', function() {
-		console.log(config.appName);
-		grunt.file.copy('index.html', config.buildFolder + '/index.html', {
-			process: function(files){
-				return grunt.template.process(files, {
-					data: {
-						appName: config.appName,
-					}
-				});
-			}
-		});
-	});
 
 	grunt.registerTask('generatePageOne', function() {
 		console.log(config.appName);
@@ -58,6 +44,6 @@ module.exports = function (grunt) {
 		});
 	});
 
-	grunt.registerTask('build', ['generateIndex', 'generatePageOne', 'generatePageTwo']);
+	grunt.registerTask('multi', ['generateIndex', 'generatePageOne', 'generatePageTwo']);
 
 }
