@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
 
-	var archivo =  grunt.option('nArchivo');
+	var archivo =  grunt.option('nArchivo') || 'config.json';
 
 	var config = grunt.file.readJSON(archivo);
 
