@@ -44,6 +44,19 @@ module.exports = function (grunt) {
 		});
 	});
 
-	grunt.registerTask('multi', ['generateIndex', 'generatePageOne', 'generatePageTwo']);
+	grunt.registerTask('multi', ['generateIndex', 'generatePageOne', 'generatePageTwo', 'jasmine']);
+
+	grunt.loadNpmTasks('grunt-contrib-jasmine');
+
+	grunt.initConfig({
+	  jasmine: {
+	    JS: {
+	      src: 'js/*.js',
+	      options: {
+	        specs: 'spec/*.spec.js'
+	      }
+	    }
+	  }
+	});
 
 }
