@@ -1,0 +1,25 @@
+{
+  "name": "secondexam",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoAleC/SecondExam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoAleC/SecondExam/issues"
+  },
+  "homepage": "https://github.com/NicoAleC/SecondExam#readme",
+  "dependencies": {
+    "grunt": "^1.0.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-jasmine": "^1.2.0"
+  },
+  "description": ""
+}
